@@ -11,6 +11,40 @@
         font-family: Arial, sans-serif;
         background-color: #000;
         color: #fff;
+        overflow-x: hidden;
+    }
+
+    /* Fade-in animation */
+    .fade-in {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 1s ease-out, transform 1s ease-out;
+    }
+    .fade-in.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    /* Slide-in left */
+    .slide-left {
+        opacity: 0;
+        transform: translateX(-40px);
+        transition: opacity 1s ease-out, transform 1s ease-out;
+    }
+    .slide-left.visible {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    /* Slide-in right */
+    .slide-right {
+        opacity: 0;
+        transform: translateX(40px);
+        transition: opacity 1s ease-out, transform 1s ease-out;
+    }
+    .slide-right.visible {
+        opacity: 1;
+        transform: translateX(0);
     }
 
     header {
@@ -22,7 +56,7 @@
 
     h1 {
         font-size: 42px;
-        color: #d4af37; /* Deep Gold */
+        color: #d4af37;
         margin-bottom: 10px;
     }
 
@@ -49,142 +83,4 @@
         font-weight: bold;
         text-decoration: none;
         border-radius: 6px;
-        font-size: 20px;
-    }
 
-    .section {
-        padding: 50px 20px;
-        border-bottom: 1px solid #333;
-    }
-
-    .feature-box {
-        max-width: 900px;
-        margin: 30px auto;
-        padding: 25px;
-        background-color: #111;
-        border-left: 4px solid #d4af37;
-        border-radius: 6px;
-    }
-
-    .before-after {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 30px;
-        margin-top: 40px;
-    }
-
-    .ba-box {
-        background-color: #111;
-        padding: 25px;
-        width: 350px;
-        border-radius: 6px;
-        border: 1px solid #333;
-    }
-
-    .ba-box h3 {
-        color: #d4af37;
-        margin-bottom: 10px;
-    }
-</style>
-</head>
-
-<body>
-
-<header>
-    <h1>Tools That Give Funeral Directors Their Time Back</h1>
-    <p>Built by someone who understands the pressure you're under — and the families you serve.</p>
-    <a href="index.html" class="cta-button">View Features & Pricing</a>
-</header>
-
-<section class="section">
-    <h2>Your Story: The Tech Builder Who Cares</h2>
-    <p>You didn’t build software for “everyone.” You built a system specifically for funeral homes — because you saw how much pressure directors face every single day. 
-    Families need answers. Staff needs direction. Calls come in at the worst possible moments. And through it all, the director is expected to stay calm, organized, and compassionate.</p>
-
-    <p>You created a system that quietly handles the details in the background, so directors can focus on what matters most — serving families with dignity.</p>
-</section>
-
-<section class="section">
-    <h2>All Your Add‑Ons in Action</h2>
-
-    <div class="feature-box">
-        <h3 style="color:#d4af37;">Missed‑Call Text‑Back</h3>
-        <p>A director is in the middle of a service. A call comes in. The system instantly texts the family:  
-        <em>“We’re currently assisting another family, but we will reach out shortly.”</em></p>
-    </div>
-
-    <div class="feature-box">
-        <h3 style="color:#d4af37;">AI Assistant</h3>
-        <p>A family asks a question at 11:47 PM. The AI responds politely, professionally, and instantly — no staff needed.</p>
-    </div>
-
-    <div class="feature-box">
-        <h3 style="color:#d4af37;">Obituary Automation</h3>
-        <p>The director enters basic information. The obituary appears fully formatted and ready to publish.</p>
-    </div>
-
-    <div class="feature-box">
-        <h3 style="color:#d4af37;">Photo Gallery</h3>
-        <p>The family uploads photos. The gallery updates automatically — no resizing, no manual work.</p>
-    </div>
-
-    <div class="feature-box">
-        <h3 style="color:#d4af37;">Memorial Slideshow</h3>
-        <p>Photos become a beautiful slideshow in seconds, ready for the service.</p>
-    </div>
-
-    <div class="feature-box">
-        <h3 style="color:#d4af37;">Send Flowers Button</h3>
-        <p>A clean, respectful button that connects families to local florists — and keeps revenue in‑house.</p>
-    </div>
-
-    <div class="feature-box">
-        <h3 style="color:#d4af37;">Pre‑Planning Form</h3>
-        <p>A simple form collects everything the director needs — organized and ready to review.</p>
-    </div>
-
-    <div class="feature-box">
-        <h3 style="color:#d4af37;">Case Tracking Dashboard</h3>
-        <p>Every case. Every step. One clean dashboard. Nothing gets missed.</p>
-    </div>
-
-    <div class="feature-box">
-        <h3 style="color:#d4af37;">Staff Alerts</h3>
-        <p>A new case comes in. Staff is notified instantly. No confusion. No delays.</p>
-    </div>
-
-    <div class="feature-box">
-        <h3 style="color:#d4af37;">Family Communication</h3>
-        <p>Automatic updates keep families informed — reducing calls and reducing stress.</p>
-    </div>
-</section>
-
-<section class="section">
-    <h2>Before & After</h2>
-
-    <div class="before-after">
-        <div class="ba-box">
-            <h3>Before</h3>
-            <p>Missed calls.  
-            Overwhelmed staff.  
-            Families waiting for answers.  
-            Directors stretched thin.</p>
-        </div>
-
-        <div class="ba-box">
-            <h3>After</h3>
-            <p>Instant communication.  
-            Organized workflow.  
-            Families supported.  
-            Directors in control.</p>
-        </div>
-    </div>
-</section>
-
-<section class="section" style="text-align:center;">
-    <a href="index.html" class="cta-button">View Features & Pricing</a>
-</section>
-
-</body>
-</html>
